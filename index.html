@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Movie Search App</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">Movie Finder</p>
+        <h1>Search movies and save your favourites.</h1>
+        <p class="subtitle">
+          Find movie details, ratings and release dates using live API data.
+        </p>
+      </div>
+
+      <button class="theme-toggle" id="themeToggle">Dark</button>
+    </header>
+
+    <form class="search-form" id="searchForm">
+      <input type="text" id="searchInput" placeholder="Search for a movie..." />
+      <button type="submit">Search</button>
+    </form>
+
+    <p class="message" id="message"></p>
+
+    <section class="toolbar">
+      <button class="tab-btn active" data-tab="results">Search Results</button>
+      <button class="tab-btn" data-tab="favorites">Favorites</button>
+    </section>
+
+    <section class="movie-grid" id="movieGrid"></section>
+  </main>
+
+  <div class="modal" id="movieModal">
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose">×</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
