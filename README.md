@@ -29,7 +29,7 @@ A responsive movie search application built with HTML, CSS and JavaScript using 
 - GitHub Pages
 
 ## Live Demo
-
+https://romaska877.github.io/movie-search-app/
 
 
 ## Project Purpose
